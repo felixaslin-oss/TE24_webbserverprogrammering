@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block head %} 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block heading %}base{% endblock %}</title>
+        {% endblock %}
+    </head>
+    <body>
+        <nav>
+            <ul><a href="/about">Om oss</a></ul>
+            <ul><a href="/contact">Kontakt</a></ul>
+            <ul><a href="/index">Hem</a></ul>
+        </nav>
+        <main>{% block heading %}{% endblock %}</main>
+        <footer>{% block footer %}Branko och Bo collab(onlyfans){% endblock %}</footer>
+    </body> 
+</html>
+ 
